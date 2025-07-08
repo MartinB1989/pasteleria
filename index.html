@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dulces Sueños - Mesas Dulces y Tortas para Cualquier Celebración</title>
+    <meta name="description" content="Especialistas en mesas dulces elegantes para bodas, cumpleaños, eventos corporativos y celebraciones especiales. También creamos tortas temáticas únicas. Hacemos realidad tus momentos más dulces.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>Dulces Sueños</h1>
+                    <span>Mesas Dulces Para Cada Ocasión</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#galeria" class="nav-link">Galería</a></li>
+                    <li><a href="#productos" class="nav-link">Productos</a></li>
+                    <li><a href="#contacto" class="nav-link contact-btn">Contáctanos</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2 class="hero-title">Creamos <span class="highlight">Mesas Dulces</span> Perfectas Para Tu Celebración</h2>
+                    <p class="hero-description">Especializados en mesas dulces elegantes para bodas, cumpleaños, eventos corporativos y celebraciones especiales. También creamos tortas temáticas únicas. Cada detalle pensado para hacer de tu evento un momento inolvidable.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn btn-primary whatsapp-btn" onclick="openWhatsApp('Hola! Me interesa una mesa dulce para mi evento')">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar Mesa Dulce
+                        </a>
+                        <a href="#productos" class="btn btn-secondary">Ver Productos</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="img/alfajores-y-bocaditos.jpg" alt="Mesa dulce elegante">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios Especializados</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Mesas Dulces Elegantes</h3>
+                        <p>Nuestra especialidad. Diseños únicos para bodas, cumpleaños, eventos corporativos, baby showers y toda ocasión especial.</p>
+                        <a href="#" class="service-btn whatsapp-btn" onclick="openWhatsApp('Hola! Quiero una mesa dulce para mi evento. El tipo de celebración es: [describir evento]')">Consultar</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Tortas Temáticas</h3>
+                        <p>Creamos tortas personalizadas para cumpleaños y celebraciones temáticas. No realizamos tortas de boda, pero sí complementamos con mesas dulces.</p>
+                        <a href="#" class="service-btn whatsapp-btn" onclick="openWhatsApp('Hola! Me interesa una torta temática. El tema es: [escribir tema]')">Consultar</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Eventos Completos</h3>
+                        <p>Mesa dulce + torta temática + diseño personalizado. Todo lo que necesitas para una celebración perfecta e inolvidable.</p>
+                        <a href="#" class="service-btn whatsapp-btn" onclick="openWhatsApp('Hola! Quiero un paquete completo para mi evento')">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="products">
+            <div class="container">
+                <!-- Gallery Carousel -->
+                <div id="galeria" class="gallery-section">
+                    <h3 class="gallery-title">Galería de Nuestras Mesas Dulces</h3>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0001.jpg" alt="Mesa dulce especial" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0002.jpg" alt="Mesa dulce única" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0003.jpg" alt="Mesa dulce creativa" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0004.jpg" alt="Mesa dulce deliciosa" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0005.jpg" alt="Mesa dulce hermosa" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0006.jpg" alt="Mesa dulce premium" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0007.jpg" alt="Mesa dulce exquisita" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0008.jpg" alt="Mesa dulce sofisticada" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0009.jpg" alt="Mesa dulce elegante" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0010.jpg" alt="Mesa dulce festiva" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0011.jpg" alt="Mesa dulce increíble" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0012.jpg" alt="Mesa dulce perfecta" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0013.jpg" alt="Mesa dulce maravillosa" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0014.jpg" alt="Mesa dulce espectacular" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0015.jpg" alt="Mesa dulce divina" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="img/mesa-dulce/IMG-20250708-WA0016.jpg" alt="Mesa dulce excepcional" onclick="openModal(this)">
+                            </div>
+                            <div class="carousel-slide">
+                              <img src="img/mesa-dulce/IMG-20250707-WA0011.jpg" alt="Mesa dulce elegante" onclick="openModal(this)">
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="img/mesa-dulce/IMG-20250707-WA0012.jpg" alt="Mesa dulce temática" onclick="openModal(this)">
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="img/mesa-dulce/IMG-20250707-WA0013.jpg" alt="Mesa dulce colorida" onclick="openModal(this)">
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="img/mesa-dulce/IMG-20250707-WA0015.jpg" alt="Mesa dulce artesanal" onclick="openModal(this)">
+                          </div>
+                          <div class="carousel-slide">
+                              <img src="img/mesa-dulce/IMG-20250707-WA0019.jpg" alt="Mesa dulce personalizada" onclick="openModal(this)">
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="productos" class="section-title">Nuestros Productos Artesanales</h2>
+                <p class="section-subtitle">Deliciosos y elegantes para cada ocasión especial</p>
+                <div class="products-grid">
+                    <div class="product-card" data-category="bocaditos">
+                        <div class="product-image">
+                            <img src="img/muffins.jpg" alt="Muffins Artesanales">
+                            <div class="product-overlay">
+                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estos deliciosos muffins para mi evento')">Consultar</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Muffins</h3>
+                            <p>Esponjosos y decorados para cada ocasión</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="postres">
+                        <div class="product-image">
+                            <img src="img/cake-pops.jpg" alt="Cake Pops Elegantes">
+                            <div class="product-overlay">
+                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('¡Me encantan estos cake pops! ¿Los pueden personalizar para mi evento?')">Consultar</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Cake Pops</h3>
+                            <p>Pequeñas obras de arte personalizadas</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="postres">
+                        <div class="product-image">
+                            <img src="img/brownies.jpg" alt="Brownies Decorados">
+                            <div class="product-overlay">
+                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estos brownies para complementar la mesa dulce')">Consultar</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Brownies</h3>
+                            <p>Chocolatosos y decorados con amor</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="postres">
+                        <div class="product-image">
+                            <img src="img/pastafrola.jpg" alt="Pastafrola Casera">
+                            <div class="product-overlay">
+                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('¡Qué rica pastafrola! ¿La pueden incluir en la mesa dulce?')">Consultar</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Pastafrola</h3>
+                            <p>Sabor casero tradicional que encanta</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="tortas">
+                        <div class="product-image">
+                            <img src="img/torta.jpg" alt="Torta Temática Personalizada">
+                            <div class="product-overlay">
+                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me encanta esta torta temática! ¿Pueden personalizarla para mi celebración?')">Consultar</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Torta Temática</h3>
+                            <p>Centro de atención de tu celebración</p>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-category="bocaditos">
+                        <div class="product-image">
+                            <img src="img/alfajores-y-bocaditos.jpg" alt="Alfajores y Bocaditos">
+                            <div class="product-overlay">
+                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estos alfajores y bocaditos para mi evento')">Consultar</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Alfajores y Bocaditos</h3>
+                            <p>Delicias perfectas para compartir</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>¿Necesitas una mesa dulce completa?</h3>
+                    <p>Combinamos todos nuestros productos para crear la mesa dulce perfecta para tu evento especial</p>
+                    <a href="#" class="btn btn-primary whatsapp-btn" onclick="openWhatsApp('Hola! Me gustaría armar una mesa dulce con varios de sus productos (muffins, cake pops, brownies, etc.) para mi evento')">
+                        <i class="fab fa-whatsapp"></i>
+                        Armar Mesa Dulce Completa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>¡Hablemos de tu evento especial!</h2>
+                        <p>Somos especialistas en crear mesas dulces únicas para cualquier celebración. Cuéntanos sobre tu evento y crearemos algo memorable que todos recordarán.</p>
+                        
+                        <div class="contact-features">
+                            <div class="feature">
+                                <i class="fas fa-star"></i>
+                                <div>
+                                    <h4>Calidad Garantizada</h4>
+                                    <p>Productos artesanales de la más alta calidad</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-palette"></i>
+                                <div>
+                                    <h4>Diseños Personalizados</h4>
+                                    <p>Adaptamos cada mesa dulce a tu estilo y evento</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <div>
+                                    <h4>Hecho con Amor</h4>
+                                    <p>Cada detalle pensado para tu celebración</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-actions">
+                        <div class="contact-card">
+                            <h3>¡Planifiquemos tu Evento Perfecto!</h3>
+                            <p>Cuéntanos el tipo de evento, fecha y tus preferencias para crear algo especial</p>
+                            <a href="#" class="btn btn-primary btn-large whatsapp-btn" onclick="openWhatsApp('¡Hola! Quiero planificar mi evento. Es para: ___. La fecha es: ___. Me gustaría: ___.')">
+                                <i class="fab fa-whatsapp"></i>
+                                Planificar Evento Especial
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <h3>Dulces Sueños</h3>
+                        <p>Creando momentos especiales para cada celebración</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Nuestros Productos</h4>
+                    <ul>
+                        <li>Mesas Dulces Elegantes</li>
+                        <li>Muffins y Cake Pops</li>
+                        <li>Brownies y Pastafrola</li>
+                        <li>Tortas Temáticas</li>
+                        <li>Alfajores y Bocaditos</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>¡Planifiquemos tu evento perfecto!</p>
+                    <a href="#" class="footer-whatsapp whatsapp-btn" onclick="openWhatsApp('Hola! Me gustaría conocer más sobre sus mesas dulces y servicios')">
+                        <i class="fab fa-whatsapp"></i>
+                        Enviar Mensaje
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dulces Sueños. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="#" class="whatsapp-btn" onclick="openWhatsApp('¡Hola! Me interesa una mesa dulce para mi evento')" title="Contactar por WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="tooltip">¡Consulta tu evento!</span>
+        </a>
+    </div>
+
+    <!-- Modal para ampliar imágenes -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-caption" id="modalCaption"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
