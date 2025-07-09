@@ -1,5 +1,5 @@
 // Configuración de WhatsApp
-const WHATSAPP_NUMBER = "593999999999"; // Cambiar por tu número real
+const WHATSAPP_NUMBER = "541144261182"; // Número de WhatsApp de Dulces Sueños
 const WHATSAPP_BASE_URL = "https://wa.me/";
 
 // Función principal para abrir WhatsApp

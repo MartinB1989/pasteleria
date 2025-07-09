@@ -423,9 +423,25 @@ h3 {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-bottom: 4rem;
+}
+
+/* Para pantallas grandes asegurar 4 columnas */
+@media (min-width: 1200px) {
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+/* Para tablet grande mantener responsive */
+@media (max-width: 1199px) and (min-width: 1025px) {
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
 }
 
 .product-card {
@@ -444,7 +460,7 @@ h3 {
 
 .product-image {
     position: relative;
-    height: 300px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -804,7 +820,8 @@ h3 {
     }
     
     .products-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 }
 
