@@ -1,0 +1,5 @@
+# PENDIENTE: reemplazar DOMINIO-A-DEFINIR.com.ar por el dominio real.
+User-agent: *
+Allow: /
+
+Sitemap: https://DOMINIO-A-DEFINIR.com.ar/sitemap.xml

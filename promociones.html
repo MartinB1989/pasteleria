@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promociones y Combos - Dulces Sueños</title>
-    <meta name="description" content="Descubre nuestras promociones especiales y combos de mesas dulces. Desde opciones económicas hasta paquetes premium para tu evento perfecto.">
+    <title>Combos y Promociones de Mesas Dulces | Gisela Pastelera</title>
+    <meta name="description" content="Combos de mesas dulces para reuniones y eventos de distinto tamaño. Elegí el combo, o armamos uno a tu medida. Consultalo por WhatsApp.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="canonical" href="https://DOMINIO-A-DEFINIR.com.ar/promociones.html">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#b0124f">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="Gisela Pastelera">
+    <meta property="og:title" content="Combos y Promociones de Mesas Dulces | Gisela Pastelera">
+    <meta property="og:description" content="Combos de mesas dulces para reuniones y eventos de distinto tamaño. Elegí el combo, o armamos uno a tu medida. Consultalo por WhatsApp.">
+    <meta property="og:url" content="https://DOMINIO-A-DEFINIR.com.ar/promociones.html">
+    <meta property="og:image" content="https://DOMINIO-A-DEFINIR.com.ar/img/og-gisela-pastelera.jpg">
+    <meta property="og:image:alt" content="Logo de Gisela Pastelera">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Combos y Promociones de Mesas Dulces | Gisela Pastelera">
+    <meta name="twitter:description" content="Combos de mesas dulces para reuniones y eventos de distinto tamaño. Elegí el combo, o armamos uno a tu medida. Consultalo por WhatsApp.">
+    <meta name="twitter:image" content="https://DOMINIO-A-DEFINIR.com.ar/img/og-gisela-pastelera.jpg">
+    <!-- SEO PENDIENTE: reemplazar DOMINIO-A-DEFINIR.com.ar por el dominio real. -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="promociones.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -16,20 +34,27 @@
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <h1><a href="index.html" style="text-decoration: none; color: inherit;">Dulces Sueños</a></h1>
-                    <span>Mesas Dulces Para Cada Ocasión</span>
+                    <a href="index.html" class="logo-mark-link" aria-label="Gisela Pastelera, ir al inicio"><img class="logo-mark" src="img/logo-gisela-pastelera-256.webp" alt="Logo de Gisela Pastelera" width="256" height="256"></a>
+                    <div class="logo-text">
+                        <p class="brand"><a href="index.html">Gisela Pastelera</a></p>
+                        <span>Mesas Dulces Para Cada Ocasión</span>
+                    </div>
                 </div>
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
                     <li><a href="index.html#galeria" class="nav-link">Galería</a></li>
                     <li><a href="index.html#productos" class="nav-link">Productos</a></li>
-                    <li><a href="promociones.html" class="nav-link promo-btn active">Arma tu Pedido</a></li>
-                    <li><a href="index.html#contacto" class="nav-link contact-btn">Contáctanos</a></li>
+                    <li><a href="promociones.html" class="nav-link active" aria-current="page">Combos</a></li>
+                    <li><a href="index.html#faq" class="nav-link">Preguntas</a></li>
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-actions">
+                    <a href="https://wa.me/541144261182" class="header-cta wa-link" data-wa="Hola Gisela, vi tu web y quiero consultar por un combo de mesa dulce." target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Escribinos</span></a>
+                    <button type="button" class="hamburger" aria-label="Abrir menú" aria-controls="navMenu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -41,20 +66,20 @@
         <section class="promo-hero">
             <div class="container">
                 <div class="promo-hero-content">
-                    <h1 class="promo-title">🎉 <span class="highlight">Promociones Especiales</span> 🎉</h1>
-                    <p class="promo-subtitle">Descubre nuestros combos diseñados para cada tamaño de evento. Desde reuniones íntimas hasta grandes celebraciones.</p>
-                    <div class="promo-features">
+                    <h1 class="promo-title"><span class="highlight">Combos y Promociones de Mesas Dulces</span></h1>
+                    <p class="promo-subtitle">Combos armados según cuántos invitados esperás, de reuniones chicas a grandes celebraciones. Elegí el que se parezca a tu evento o pedinos uno a medida.</p>
+                    <div class="promo-highlights">
                         <div class="feature-item">
-                            <i class="fas fa-users"></i>
-                            <span>Para Cualquier Grupo</span>
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            <span>Desde 15 hasta 80 personas</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-gift"></i>
-                            <span>Combos Exclusivos</span>
+                            <i class="fas fa-gift" aria-hidden="true"></i>
+                            <span>Armamos uno a tu medida</span>
                         </div>
                         <div class="feature-item">
-                            <i class="fas fa-star"></i>
-                            <span>Calidad Garantizada</span>
+                            <i class="fas fa-star" aria-hidden="true"></i>
+                            <span>Productos Artesanales</span>
                         </div>
                     </div>
                 </div>
@@ -65,7 +90,7 @@
         <section class="promotions">
             <div class="container">
                 <h2 class="section-title">Nuestros Combos y Promociones</h2>
-                <p class="section-subtitle">Elige el paquete perfecto para tu evento</p>
+                <p class="section-subtitle">Fijate cuántos invitados esperás y elegí tu combo</p>
 
                 <div class="promotions-grid">
                     <!-- Combo 1 - Clásico -->
@@ -78,17 +103,17 @@
                         </div>
                         <div class="promo-content">
                             <ul class="promo-features">
-                                <li><i class="fas fa-check"></i>12 Cupcakes decorados</li>
-                                <li><i class="fas fa-check"></i>12 Cake pops</li>
-                                <li><i class="fas fa-check"></i>12 Alfajores bañados</li>
-                                <li><i class="fas fa-check"></i>12 Shots dulces (mousse chocolate o oreo)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>12 Cupcakes decorados</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>12 Cake pops</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>12 Alfajores bañados</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>12 Shots dulces (mousse chocolate o oreo)</li>
                             </ul>
                             <div class="promo-description">
-                                <p>Ideal para cumpleaños en familia o reuniones con amigos. Lo más rico que tenemos en porciones justas.</p>
+                                <p>Pensado para un cumpleaños en familia o una juntada de amigos: cupcakes, cake pops, alfajores y shots en porciones justas.</p>
                             </div>
                             <button class="promo-btn-select" onclick="orderCombo('Clásico', '15-20 personas', '12 Cupcakes decorados + 12 Cake pops + 12 Alfajores bañados + 12 Shots dulces')">
-                                <i class="fab fa-whatsapp"></i>
-                                Solicitar Combo
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Cotizar este combo
                             </button>
                         </div>
                     </div>
@@ -103,18 +128,18 @@
                         </div>
                         <div class="promo-content">
                             <ul class="promo-features">
-                                <li><i class="fas fa-check"></i>15 Cake pops con diseños divertidos</li>
-                                <li><i class="fas fa-check"></i>15 Cupcakes</li>
-                                <li><i class="fas fa-check"></i>15 Cookies</li>
-                                <li><i class="fas fa-check"></i>10 Shots de mousse de chocolate o oreo</li>
-                                <li><i class="fas fa-check"></i>15 Alfajores bañados en chocolate</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Cake pops con diseños divertidos</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Cupcakes</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Cookies</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>10 Shots de mousse de chocolate o oreo</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Alfajores bañados en chocolate</li>
                             </ul>
                             <div class="promo-description">
-                                <p>¡Los chicos van a estar felices! Diseños divertidos con colores alegres y todos los sabores que les gustan.</p>
+                                <p>Para fiestas de chicos: cake pops con diseños divertidos, colores alegres y dulces que se comen con la mano.</p>
                             </div>
                             <button class="promo-btn-select" onclick="orderCombo('Infantil', '20-25 personas', '15 Cake pops divertidos + 15 Cupcakes + 15 Cookies + 10 Shots chocolate + 15 Alfajores bañados')">
-                                <i class="fab fa-whatsapp"></i>
-                                Solicitar Combo
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Cotizar este combo
                             </button>
                         </div>
                     </div>
@@ -129,18 +154,18 @@
                         </div>
                         <div class="promo-content">
                             <ul class="promo-features">
-                                <li><i class="fas fa-check"></i>15 Brownies</li>
-                                <li><i class="fas fa-check"></i>15 Trufas artesanales</li>
-                                <li><i class="fas fa-check"></i>15 Cupcakes de chocolate con frosting</li>
-                                <li><i class="fas fa-check"></i>15 Cake pops bañados en chocolate</li>
-                                <li><i class="fas fa-check"></i>15 Conitos de chocolate(blanco o negro)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Brownies</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Trufas artesanales</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Cupcakes de chocolate con frosting</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Cake pops bañados en chocolate</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Conitos de chocolate(blanco o negro)</li>
                             </ul>
                             <div class="promo-description">
-                                <p>¿Te encanta el chocolate? Este combo es para vos. Puro chocolate, del bueno, que se derrite en la boca.</p>
+                                <p>Para los fanáticos del chocolate: brownies, trufas, cupcakes, cake pops y conitos, todo en versión chocolate.</p>
                             </div>
                             <button class="promo-btn-select" onclick="orderCombo('Chocolate Lovers', '25-30 personas', '15 Brownies + 15 Trufas + 15 Cupcakes chocolate + 15 Cake pops chocolate + 15 Conitos de chocolate')">
-                                <i class="fab fa-whatsapp"></i>
-                                Solicitar Combo
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Cotizar este combo
                             </button>
                         </div>
                     </div>
@@ -155,19 +180,19 @@
                         </div>
                         <div class="promo-content">
                             <ul class="promo-features">
-                                <li><i class="fas fa-check"></i>20 Cupcakes decorados</li>
-                                <li><i class="fas fa-check"></i>20 Alfajores</li>
-                                <li><i class="fas fa-check"></i>20 Shots dulces variados (cheesecake, tiramisú, mousse de chocolate)</li>
-                                <li><i class="fas fa-check"></i>20 Trufas</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Cupcakes decorados</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Alfajores</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Shots dulces variados (cheesecake, tiramisú, mousse de chocolate)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Trufas</li>
 
-                                <li><i class="fas fa-check"></i>15 Conitos de chocolate(blanco o negro)</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Conitos de chocolate(blanco o negro)</li>
                             </ul>
                             <div class="promo-description">
-                                <p>Para cuando querés quedar bien con todos. Variedad rica y abundante que no va a faltar nada.</p>
+                                <p>Para quedar bien con todos: cupcakes, alfajores, shots, trufas y conitos, con variedad para distintos gustos.</p>
                             </div>
                             <button class="promo-btn-select" onclick="orderCombo('Completo', '30-40 personas', '20 Cupcakes decorados + 20 Alfajores + 20 Shots variados + 20 Trufas + 15 Conitos de chocolate')">
-                                <i class="fab fa-whatsapp"></i>
-                                Solicitar Combo
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Cotizar este combo
                             </button>
                         </div>
                     </div>
@@ -182,19 +207,19 @@
                         </div>
                         <div class="promo-content">
                             <ul class="promo-features">
-                                <li><i class="fas fa-check"></i>24 Brownies</li>
-                                <li><i class="fas fa-check"></i>12 Mini cheesecakes</li>
-                                <li><i class="fas fa-check"></i>20 Alfajores</li>
-                                <li><i class="fas fa-check"></i>20 Shots de lemon pie</li>
-                                <li><i class="fas fa-check"></i>20 Bombones artesanales</li>
-                                <li><i class="fas fa-check"></i>15 Conitos de chocolate</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>24 Brownies</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>12 Mini cheesecakes</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Alfajores</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Shots de lemon pie</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Bombones artesanales</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>15 Conitos de chocolate</li>
                             </ul>
                             <div class="promo-description">
-                                <p>Para esos eventos especiales como bodas o aniversarios. Todo bien presentado y con mucha variedad.</p>
+                                <p>Pensado para bodas y aniversarios: brownies, cheesecakes, alfajores, shots de lemon pie, bombones y conitos, con una mesa bien presentada.</p>
                             </div>
-                            <button class="promo-btn-select" onclick="orderCombo('Elegante', '40-50 personas', '24 Alfajores de maicena + 12 Mini cheesecakes + 20 Alfajores + 20 Shots lemon pie + 20 Bombones + 15 Conitos de chocolate')">
-                                <i class="fab fa-whatsapp"></i>
-                                Solicitar Combo
+                            <button class="promo-btn-select" onclick="orderCombo('Elegante', '40-50 personas', '24 Brownies + 12 Mini cheesecakes + 20 Alfajores + 20 Shots lemon pie + 20 Bombones + 15 Conitos de chocolate')">
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Cotizar este combo
                             </button>
                         </div>
                     </div>
@@ -209,20 +234,20 @@
                         </div>
                         <div class="promo-content">
                             <ul class="promo-features">
-                                <li><i class="fas fa-check"></i>40 Cupcakes elegantes</li>
-                                <li><i class="fas fa-check"></i>30 Macarons personalizados</li>
-                                <li><i class="fas fa-check"></i>25 Mini cheesecakes</li>
-                                <li><i class="fas fa-check"></i>30 Alfajores de boda</li>
-                                <li><i class="fas fa-check"></i>25 Shots gourmet variados</li>
-                                <li><i class="fas fa-check"></i>20 Bombones premium</li>
-                                <li><i class="fas fa-check"></i>20 Cookies decoradas</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>40 Cupcakes elegantes</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>30 Macarons personalizados</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>25 Mini cheesecakes</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>30 Alfajores de boda</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>25 Shots gourmet variados</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Bombones premium</li>
+                                <li><i class="fas fa-check" aria-hidden="true"></i>20 Cookies decoradas</li>
                             </ul>
                             <div class="promo-description">
-                                <p>Para bodas y eventos grandes. Variedad amplia de dulces para que todos disfruten.</p>
+                                <p>Para bodas y eventos grandes: la variedad más amplia de nuestros combos, para que cada invitado encuentre su dulce.</p>
                             </div>
                             <button class="promo-btn-select" onclick="orderCombo('Bodas & Eventos', '60-80 personas', '40 Cupcakes elegantes + 30 Macarons + 25 Mini cheesecakes + 30 Alfajores + 25 Shots variados + 20 Bombones + 20 Cookies decoradas')">
-                                <i class="fab fa-whatsapp"></i>
-                                Solicitar Combo
+                                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                Cotizar este combo
                             </button>
                         </div>
                     </div>
@@ -232,12 +257,9 @@
 
                 <!-- CTA Section -->
                 <div class="promo-cta">
-                    <h3>¿Necesitas algo personalizado?</h3>
-                    <p>Podemos armar cualquier combo a tu medida, con lo que más te guste</p>
-                    <button class="btn btn-primary btn-large" onclick="openWhatsApp('¡Hola! Me gustaría personalizar un combo para mi evento. ¿Podrían ayudarme?')">
-                        <i class="fab fa-whatsapp"></i>
-                        Personalizar Mi Combo
-                    </button>
+                    <h3>¿Ningún combo se ajusta a tu evento?</h3>
+                    <p>Armamos uno a tu medida: escribinos y lo resolvemos juntos.</p>
+                    <a href="https://wa.me/541144261182" class="btn btn-primary btn-large wa-link" data-wa="Hola Gisela, vi tu web y quiero un combo a medida." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Pedir un combo a medida</a>
                 </div>
             </div>
         </section>
@@ -249,8 +271,9 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <h3>Dulces Sueños</h3>
-                        <p>Creando momentos especiales para cada celebración</p>
+                        <img class="logo-mark logo-mark--footer" src="img/logo-gisela-pastelera-256.webp" alt="Logo de Gisela Pastelera" width="256" height="256" loading="lazy" decoding="async">
+                        <h3>Gisela Pastelera</h3>
+                        <p>Mesas dulces y tortas temáticas artesanales para tus celebraciones</p>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -259,34 +282,36 @@
                         <li>Desde 15 personas</li>
                         <li>Mesas Dulces Completas</li>
                         <li>Eventos Corporativos</li>
-                        <li>Bodas y Celebraciones VIP</li>
+                        <li>Bodas y Celebraciones</li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>¡Elige tu combo perfecto!</p>
-                    <a href="#" class="footer-whatsapp whatsapp-btn" onclick="openWhatsApp('Hola! Me gustaría conocer más sobre sus combos y promociones')">
-                        <i class="fab fa-whatsapp"></i>
-                        Ver Promociones
-                    </a>
+                    <p>Elegí tu combo y consultá si tenemos tu fecha.</p>
+                    <a href="https://wa.me/541144261182" class="footer-whatsapp wa-link" data-wa="Hola Gisela, vi tu web y quiero saber más sobre tus combos." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar combos</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Dulces Sueños. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Gisela Pastelera. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/541144261182" class="wa-link" data-wa="Hola Gisela, vi tu web y quiero cotizar un combo de mesa dulce." target="_blank" rel="noopener" aria-label="Cotizá tu combo por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Cotizá por WhatsApp</span></a>
+    </div>
 
     <script src="script.js"></script>
     <script>
         // Función específica para ordenar combos
         function orderCombo(nombre, personas, descripcion) {
-            const mensaje = `¡Hola! Me interesa el combo "${nombre}" para ${personas}.
+            const mensaje = `Hola Gisela, vi tu web y me interesa el combo "${nombre}" (para ${personas}).
 
 Incluye:
 ${descripcion}
 
-¿Podrían darme más información sobre precios y disponibilidad?`;
+¿Me pasás el precio y si tenés disponibilidad?`;
             
             openWhatsApp(mensaje);
         }

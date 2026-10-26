@@ -5,29 +5,9 @@
     min-height: 60vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, rgba(233, 30, 99, 0.08), rgba(212, 175, 55, 0.08), rgba(248, 187, 217, 0.1));
+    background: var(--cream-color);
     padding-top: 120px;
     position: relative;
-}
-
-.promo-hero::before {
-    content: '🎁💰🎉';
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    font-size: 2rem;
-    opacity: 0.3;
-    animation: float 3s ease-in-out infinite;
-}
-
-.promo-hero::after {
-    content: '✨🛍️💎';
-    position: absolute;
-    bottom: 15%;
-    right: 5%;
-    font-size: 2rem;
-    opacity: 0.3;
-    animation: float 3s ease-in-out infinite reverse;
 }
 
 .promo-hero-content {
@@ -46,11 +26,14 @@
 .promo-subtitle {
     font-size: 1.3rem;
     margin-bottom: 3rem;
-    opacity: 0.8;
+    color: var(--muted-color);
     animation: fadeInUp 1s ease-out 0.2s both;
 }
 
-.promo-features {
+.promo-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
     margin-top: 2rem;
     animation: fadeInUp 1s ease-out 0.4s both;
 }
@@ -105,56 +88,12 @@
     border-color: var(--success-color);
 }
 
-.promo-card.premium {
-    border-color: var(--purple-color);
-    background: linear-gradient(135deg, rgba(142, 68, 173, 0.03), rgba(233, 30, 99, 0.03));
-}
-
-.promo-card.vip {
-    border-color: var(--accent-color);
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.05), rgba(233, 30, 99, 0.05));
-}
-
-/* Badges */
-.promo-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: var(--success-color);
-    color: white;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    z-index: 10;
-}
-
-.premium-badge {
-    background: var(--purple-color);
-}
-
-.vip-badge {
-    background: var(--accent-color);
-}
-
 /* Promo Header */
 .promo-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
+    background: var(--primary-color);
+    color: var(--light-color);
     padding: 2rem;
     text-align: center;
-}
-
-.promo-card.basic .promo-header {
-    background: linear-gradient(135deg, var(--success-color), var(--green-color));
-}
-
-.promo-card.premium .promo-header {
-    background: linear-gradient(135deg, var(--purple-color), var(--blue-color));
-}
-
-.promo-card.vip .promo-header {
-    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 }
 
 .promo-header h3 {
@@ -215,25 +154,27 @@
 .promo-description {
     margin-bottom: 2rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid var(--line-color);
 }
 
 .promo-description p {
-    font-size: 0.9rem;
-    opacity: 0.8;
+    font-size: 0.95rem;
+    color: var(--muted-color);
     line-height: 1.5;
 }
 
 /* Promo Button */
 .promo-btn-select {
     width: 100%;
-    background: var(--gradient-success);
-    color: white;
+    min-height: 48px;
+    background: var(--success-color);
+    color: var(--light-color);
     border: none;
     padding: 1rem 1.5rem;
     border-radius: 50px;
     font-weight: 600;
     font-size: 1rem;
+    font-family: inherit;
     cursor: pointer;
     transition: var(--transition);
     display: flex;
@@ -243,30 +184,22 @@
 }
 
 .promo-btn-select:hover {
+    background: var(--success-dark);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-}
-
-.promo-card.basic .promo-btn-select {
-    background: var(--gradient-success);
-}
-
-.promo-card.premium .promo-btn-select {
-    background: linear-gradient(135deg, var(--purple-color), var(--blue-color));
-}
-
-.promo-card.vip .promo-btn-select {
-    background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 }
 
 /* CTA Section */
 .promo-cta {
     text-align: center;
     padding: 4rem 2rem;
-    background: var(--gradient-secondary);
+    background: var(--primary-color);
     border-radius: var(--border-radius);
     color: white;
     margin-top: 4rem;
+}
+
+.promo-cta .btn-primary {
+    border-color: var(--light-color);
 }
 
 .promo-cta h3 {
@@ -277,14 +210,14 @@
 
 .promo-cta p {
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: var(--light-color);
     font-size: 1.1rem;
 }
 
-/* Active state for navigation */
+/* Estado activo de la navegación */
 .nav-link.active {
-    background: var(--gradient-primary) !important;
-    color: white !important;
+    color: var(--primary-color);
+    font-weight: 700;
 }
 
 /* Responsive Design */
@@ -298,8 +231,7 @@
         font-size: 3rem;
     }
     
-    .promo-features {
-        flex-direction: column;
+    .promo-highlights {
         gap: 2rem;
     }
 }
@@ -318,9 +250,9 @@
         font-size: 1.1rem;
     }
     
-    .promo-features {
+    .promo-highlights {
         flex-direction: column;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
     
     .promotions-grid {

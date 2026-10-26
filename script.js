@@ -1,9 +1,9 @@
 // Configuración de WhatsApp
-const WHATSAPP_NUMBER = "541144261182"; // Número de WhatsApp de Dulces Sueños
+const WHATSAPP_NUMBER = "541144261182"; // Número de WhatsApp de Gisela Pastelera
 const WHATSAPP_BASE_URL = "https://wa.me/";
 
 // Función principal para abrir WhatsApp
-function openWhatsApp(message = "¡Hola! Me interesa una fiesta infantil para mi niño/a") {
+function openWhatsApp(message = "Hola! Vi su web y quiero consultar por un pedido para mi evento.") {
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `${WHATSAPP_BASE_URL}${WHATSAPP_NUMBER}?text=${encodedMessage}`;
     
@@ -39,15 +39,17 @@ document.addEventListener('DOMContentLoaded', function() {
     if (hamburger) {
         hamburger.addEventListener('click', () => {
             hamburger.classList.toggle('active');
-            navMenu.classList.toggle('active');
+            const open = navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
     }
 
     // Cerrar menu al hacer clic en un enlace
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            if (hamburger) hamburger.classList.remove('active');
+            if (navMenu) navMenu.classList.remove('active');
+            if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
         });
     });
 
@@ -67,6 +69,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    initWhatsAppLinks();
 
     // Inicializar animaciones de scroll
     initScrollAnimations();
@@ -104,18 +108,25 @@ function initScrollAnimations() {
     });
 }
 
-// Efecto del header al hacer scroll
+// Efecto del header al hacer scroll (clase; los colores viven en styles.css)
 function initHeaderScroll() {
     const header = document.querySelector('.header');
-    
+    if (!header) return;
+
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.style.background = 'rgba(255, 255, 255, 0.98)';
-            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.15)';
-        } else {
-            header.style.background = 'rgba(255, 255, 255, 0.95)';
-            header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+        header.classList.toggle('scrolled', window.scrollY > 100);
+    });
+}
+
+// Enlaces de WhatsApp: el HTML trae https://wa.me/<numero> y el mensaje en data-wa.
+// Aqui se completa el href con el mensaje prellenado (sin JS el enlace abre el chat igualmente).
+function initWhatsAppLinks() {
+    document.querySelectorAll('a.wa-link').forEach(link => {
+        const message = link.dataset.wa;
+        if (message) {
+            link.href = `${WHATSAPP_BASE_URL}${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
         }
+        link.addEventListener('click', () => trackWhatsAppClick(message || ''));
     });
 }
 
@@ -129,18 +140,7 @@ function consultarMesaDulceInfantil() {
 }
 
 function solicitarCotizacionInfantil() {
-    const mensaje = `¡Hola! Me gustaría una cotización para fiesta infantil. 
-    
-Detalles:
-- Edad del niño/a: 
-- Fecha de la fiesta: 
-- Temática favorita: 
-- Número de niños: 
-- Servicios requeridos: (torta/mesa dulce/ambos)
-
-¡Espero su respuesta!`;
-    
-    openWhatsApp(mensaje);
+    openWhatsApp("Hola Gisela, vi tu web y quiero cotizar una fiesta infantil. ¿Me pasás una propuesta?");
 }
 
 // Función para manejar formularios de contacto (si los agregas en el futuro)
@@ -181,56 +181,6 @@ function initLazyLoading() {
     });
 
     images.forEach(img => imageObserver.observe(img));
-}
-
-// Función para mostrar/ocultar el botón flotante de WhatsApp según el scroll
-function initFloatingWhatsAppScroll() {
-    const floatingBtn = document.querySelector('.whatsapp-float');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) {
-            floatingBtn.style.opacity = '1';
-            floatingBtn.style.transform = 'scale(1)';
-        } else {
-            floatingBtn.style.opacity = '0.8';
-            floatingBtn.style.transform = 'scale(0.9)';
-        }
-    });
-}
-
-// Inicializar funcionalidades adicionales cuando el DOM esté listo
-document.addEventListener('DOMContentLoaded', function() {
-    initFloatingWhatsAppScroll();
-    
-    // Agregar eventos a todos los botones de WhatsApp
-    document.querySelectorAll('.whatsapp-btn').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            // El mensaje específico se maneja en el onclick de cada botón
-        });
-    });
-});
-
-// Función para detectar si el usuario está en móvil
-function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
-// Ajustar comportamiento según el dispositivo
-if (isMobile()) {
-    // En móviles, WhatsApp se abre en la app
-    document.addEventListener('DOMContentLoaded', function() {
-        const whatsappBtns = document.querySelectorAll('.whatsapp-btn');
-        whatsappBtns.forEach(btn => {
-            btn.addEventListener('touchstart', function() {
-                this.style.transform = 'scale(0.95)';
-            });
-            
-            btn.addEventListener('touchend', function() {
-                this.style.transform = 'scale(1)';
-            });
-        });
-    });
 }
 
 // Función para compartir en redes sociales (opcional)
@@ -288,20 +238,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Funciones del carrusel y modal de galería
 function initCarousel() {
-    const track = document.getElementById('carouselTrack');
-    if (!track) return;
-    
-    // Duplicar las imágenes para hacer el efecto infinito
-    const slides = track.innerHTML;
-    track.innerHTML = slides + slides; // Duplicamos el contenido
-    
-    // Pausar animación al hover
-    track.addEventListener('mouseenter', () => {
-        track.style.animationPlayState = 'paused';
-    });
-    
-    track.addEventListener('mouseleave', () => {
-        track.style.animationPlayState = 'running';
+    document.querySelectorAll('.carousel-track').forEach(track => {
+        // Duplicar las imágenes para hacer el efecto infinito
+        const slides = track.innerHTML;
+        track.innerHTML = slides + slides;
+
+        // Pausar animación al hover
+        track.addEventListener('mouseenter', () => {
+            track.style.animationPlayState = 'paused';
+        });
+
+        track.addEventListener('mouseleave', () => {
+            track.style.animationPlayState = 'running';
+        });
     });
 }
 
@@ -352,6 +301,6 @@ document.addEventListener('keydown', function(event) {
     }
 });
 
-console.log('🎂 Dulces Sueños - Mesas Dulces cargado correctamente!');
+console.log('🎂 Gisela Pastelera - Mesas Dulces cargado correctamente!');
 console.log('🎈 WhatsApp integrado y listo para planificar eventos especiales');
 console.log('🎨 Carrusel de galería activado con modal de ampliación'); 

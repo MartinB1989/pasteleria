@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulces Sueños - Mesas Dulces y Tortas para Cualquier Celebración</title>
-    <meta name="description" content="Especialistas en mesas dulces elegantes para bodas, cumpleaños, eventos corporativos y celebraciones especiales. También creamos tortas temáticas únicas. Hacemos realidad tus momentos más dulces.">
+    <title>Gisela Pastelera | Mesas Dulces y Tortas Temáticas</title>
+    <meta name="description" content="Mesas dulces para bodas, cumpleaños y eventos, y tortas temáticas personalizadas. Escribinos y pedí tu cotización por WhatsApp.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <link rel="canonical" href="https://DOMINIO-A-DEFINIR.com.ar/">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#b0124f">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    <meta property="og:site_name" content="Gisela Pastelera">
+    <meta property="og:title" content="Gisela Pastelera | Mesas Dulces y Tortas Temáticas">
+    <meta property="og:description" content="Mesas dulces para bodas, cumpleaños y eventos, y tortas temáticas personalizadas. Escribinos y pedí tu cotización por WhatsApp.">
+    <meta property="og:url" content="https://DOMINIO-A-DEFINIR.com.ar/">
+    <meta property="og:image" content="https://DOMINIO-A-DEFINIR.com.ar/img/og-gisela-pastelera.jpg">
+    <meta property="og:image:alt" content="Logo de Gisela Pastelera">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gisela Pastelera | Mesas Dulces y Tortas Temáticas">
+    <meta name="twitter:description" content="Mesas dulces para bodas, cumpleaños y eventos, y tortas temáticas personalizadas. Escribinos y pedí tu cotización por WhatsApp.">
+    <meta name="twitter:image" content="https://DOMINIO-A-DEFINIR.com.ar/img/og-gisela-pastelera.jpg">
+    <!-- SEO PENDIENTE: reemplazar DOMINIO-A-DEFINIR.com.ar por el dominio real (canonical, og:*, twitter:image, JSON-LD, sitemap.xml, robots.txt). og:image ideal 1200x630 con logo. -->
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -12,23 +30,31 @@
 <body>
     <!-- Header/Navigation -->
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegación principal">
             <div class="nav-container">
                 <div class="logo">
-                    <h1>Dulces Sueños</h1>
-                    <span>Mesas Dulces Para Cada Ocasión</span>
+                    <a href="#inicio" class="logo-mark-link" aria-label="Gisela Pastelera, ir al inicio"><img class="logo-mark" src="img/logo-gisela-pastelera-256.webp" alt="Logo de Gisela Pastelera" width="256" height="256"></a>
+                    <div class="logo-text">
+                        <p class="brand">Gisela Pastelera</p>
+                        <span>Mesas Dulces Para Cada Ocasión</span>
+                    </div>
                 </div>
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
                     <li><a href="#galeria" class="nav-link">Galería</a></li>
                     <li><a href="#productos" class="nav-link">Productos</a></li>
-                    <!-- <li><a href="promociones.html" class="nav-link promo-btn">Arma tu Pedido</a></li> -->
-                    <li><a href="#contacto" class="nav-link contact-btn">Contáctanos</a></li>
+                    <li><a href="#como-pedir" class="nav-link">Cómo pedir</a></li>
+                    <li><a href="#faq" class="nav-link">Preguntas</a></li>
+                    <!-- <li><a href="promociones.html" class="nav-link">Arma tu Pedido</a></li> -->
                 </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-actions">
+                    <a href="https://wa.me/541144261182" class="header-cta wa-link" data-wa="Hola Gisela, vi tu web y quiero consultar por un pedido para mi evento. ¿Tenés disponibilidad?" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Escribinos</span></a>
+                    <button type="button" class="hamburger" aria-label="Abrir menú" aria-controls="navMenu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -40,50 +66,53 @@
         <section id="inicio" class="hero">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h2 class="hero-title">Creamos <span class="highlight">Mesas Dulces</span> Perfectas Para Tu Celebración</h2>
-                    <p class="hero-description">Especializados en mesas dulces elegantes para bodas, cumpleaños, eventos corporativos y celebraciones especiales. También creamos tortas temáticas únicas. Cada detalle pensado para hacer de tu evento un momento inolvidable.</p>
+                    <h1 class="hero-title">Mesas dulces y tortas temáticas personalizadas para <span class="highlight">tu fiesta</span></h1>
+                    <p class="hero-description">Diseñamos la mesa dulce de tu boda, cumpleaños, baby shower o evento de empresa, y la torta temática de tu cumpleaños. Escribinos por WhatsApp y nosotros nos ocupamos del resto.</p>
+                    <ul class="hero-points">
+                        <li><i class="fas fa-check" aria-hidden="true"></i>Diseño a tu gusto: colores, temática y productos</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i>Todo artesanal, hecho para tu fecha</li>
+                        <li><i class="fas fa-check" aria-hidden="true"></i>Hablamos directo por WhatsApp, sin formularios</li>
+                    </ul>
                     <div class="hero-buttons">
-                        <a href="#" class="btn btn-primary whatsapp-btn" onclick="openWhatsApp('Hola! Me interesa una mesa dulce para mi evento')">
-                            <i class="fab fa-whatsapp"></i>
-                            Consultar Mesa Dulce
-                        </a>
-                        <a href="#productos" class="btn btn-secondary">Ver Productos</a>
+                        <a href="https://wa.me/541144261182" class="btn btn-primary btn-large wa-link" data-wa="Hola Gisela, vi tu web y quiero cotizar una mesa dulce. ¿Me pasás una propuesta?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Pedí tu cotización por WhatsApp</a>
+                        <a href="#galeria" class="link-secondary">Mirá mesas que ya armamos</a>
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="img/mesa-dulce/IMG-20250708-WA0013.jpg" alt="Mesa dulce elegante">
+                    <img src="img/logo-gisela-pastelera-800.webp" alt="Logo de Gisela Pastelera: pastelera decorando una torta rosa junto a cupcakes y budín" width="800" height="800" fetchpriority="high" decoding="async">
                 </div>
             </div>
         </section>
 
         <!-- Services Section -->
-        <section class="services">
+        <section id="servicios" class="services">
             <div class="container">
                 <h2 class="section-title">Nuestros Servicios Especializados</h2>
+                <p class="section-subtitle">Escribinos y te armamos una propuesta por WhatsApp</p>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-layer-group"></i>
+                            <i class="fas fa-layer-group" aria-hidden="true"></i>
                         </div>
                         <h3>Mesas Dulces Elegantes</h3>
-                        <p>Nuestra especialidad. Diseños únicos para bodas, cumpleaños, eventos corporativos, baby showers y toda ocasión especial.</p>
-                        <a href="#" class="service-btn whatsapp-btn" onclick="openWhatsApp('Hola! Quiero una mesa dulce para mi evento. El tipo de celebración es: [describir evento]')">Consultar</a>
+                        <p>Nuestra especialidad: una mesa pensada para lucirse. La diseñamos con tus colores y tu temática para bodas, cumpleaños, baby showers y eventos corporativos, y vos solo disfrutás.</p>
+                        <a href="https://wa.me/541144261182" class="service-btn wa-link" data-wa="Hola Gisela, vi tu web y quiero cotizar una mesa dulce para mi evento." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Cotizar mi mesa dulce</a>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-birthday-cake"></i>
+                            <i class="fas fa-birthday-cake" aria-hidden="true"></i>
                         </div>
                         <h3>Tortas Temáticas</h3>
-                        <p>Creamos tortas personalizadas para cumpleaños y celebraciones temáticas. No realizamos tortas de boda, pero sí complementamos con mesas dulces.</p>
-                        <a href="#" class="service-btn whatsapp-btn" onclick="openWhatsApp('Hola! Me interesa una torta temática. El tema es: [escribir tema]')">Consultar</a>
+                        <p>La protagonista de tu cumpleaños, con el tema que elijas y hecha a tu medida. No hacemos tortas de boda, pero sí la mesa dulce para tu casamiento.</p>
+                        <a href="https://wa.me/541144261182" class="service-btn wa-link" data-wa="Hola Gisela, vi tu web y quiero consultar por una torta temática para un cumpleaños. ¿Qué opciones me recomendás?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar por mi torta</a>
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-gift"></i>
+                            <i class="fas fa-gift" aria-hidden="true"></i>
                         </div>
                         <h3>Eventos Completos</h3>
-                        <p>Mesa dulce + torta temática + diseño personalizado. Todo lo que necesitas para una celebración perfecta e inolvidable.</p>
-                        <a href="#" class="service-btn whatsapp-btn" onclick="openWhatsApp('Hola! Quiero un paquete completo para mi evento')">Consultar</a>
+                        <p>Mesa dulce, torta temática y diseño personalizado pensados juntos, para que todo combine y no tengas que coordinar con varios lugares.</p>
+                        <a href="https://wa.me/541144261182" class="service-btn wa-link" data-wa="Hola Gisela, vi tu web y quiero cotizar un evento completo (mesa dulce + torta temática)." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Cotizar mi evento completo</a>
                     </div>
                 </div>
             </div>
@@ -94,313 +123,362 @@
             <div class="container">
                 <!-- Gallery Carousel -->
                 <div id="galeria" class="gallery-section">
-                    <h3 class="gallery-title">Galería de Nuestras Mesas Dulces</h3>
+                    <h2 class="gallery-title">Mirá cómo quedan nuestras mesas dulces</h2>
                     <div class="carousel-container">
                         <div class="carousel-track" id="carouselTrack">
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0001.jpg" alt="Mesa dulce especial" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0001.jpg" alt="Mesa dulce con torta de crema y cerezas, brownie decorado, alfajores y vasitos de postre" width="576" height="261" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0002.jpg" alt="Mesa dulce única" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0002.jpg" alt="Mesa dulce completa con cupcakes con cerezas, brazo gitano, alfajores y brownie sobre mantel negro" width="576" height="357" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0003.jpg" alt="Mesa dulce creativa" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0003.jpg" alt="Bandeja de trufas de chocolate con coco rallado en pirotines" width="576" height="262" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0004.jpg" alt="Mesa dulce deliciosa" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0004.jpg" alt="Brownies de chocolate apilados sobre un plato" width="576" height="261" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0005.jpg" alt="Mesa dulce hermosa" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0005.jpg" alt="Torta semidesnuda de chocolate con crema chantilly y cerezas" width="576" height="419" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0006.jpg" alt="Mesa dulce premium" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0006.jpg" alt="Mesa dulce con torta de crema, tarta, brownie y vasitos de tiramisú" width="576" height="264" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0007.jpg" alt="Mesa dulce exquisita" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0007.jpg" alt="Alfajores de maicena con coco rallado en los bordes" width="576" height="258" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0008.jpg" alt="Mesa dulce sofisticada" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0008.jpg" alt="Mesa dulce con shots de postre, cupcakes, torta, tarta y bocaditos" width="576" height="264" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0009.jpg" alt="Mesa dulce elegante" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0009.jpg" alt="Tarta de limón con merengue tostado en una mesa dulce" width="576" height="260" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0010.jpg" alt="Mesa dulce festiva" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0010.jpg" alt="Cheesecake con cobertura de frutos rojos y hoja de menta" width="576" height="261" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0011.jpg" alt="Mesa dulce increíble" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0011.jpg" alt="Torta de crema con cerezas y chocolate, y rollo de brazo gitano al costado" width="576" height="260" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0012.jpg" alt="Mesa dulce perfecta" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0012.jpg" alt="Cupcakes con crema chantilly y cereza en pirotines rojos" width="576" height="260" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0013.jpg" alt="Mesa dulce maravillosa" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0013.jpg" alt="Vista de una mesa dulce con postres, brownies, tartas y bocaditos" width="576" height="986" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0014.jpg" alt="Mesa dulce espectacular" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0014.jpg" alt="Mesa dulce con cheesecake de frutos rojos, tarta de limón, lemon squares y brownies" width="576" height="259" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0015.jpg" alt="Mesa dulce divina" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0015.jpg" alt="Mesa dulce con torta de capas, cheesecake, tarta con chips de chocolate y alfajores" width="576" height="260" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                                <img src="img/mesa-dulce/IMG-20250708-WA0016.jpg" alt="Mesa dulce excepcional" onclick="openModal(this)">
+                                <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250708-WA0016.jpg" alt="Cupcakes, budines con azúcar impalpable y torta con baño de chocolate en una mesa dulce" width="576" height="264" onclick="openModal(this)">
                             </div>
                             <div class="carousel-slide">
-                              <img src="img/mesa-dulce/IMG-20250707-WA0011.jpg" alt="Mesa dulce elegante" onclick="openModal(this)">
+                              <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250707-WA0011.jpg" alt="Budín marmolado de vainilla y chocolate sobre una fuente" width="991" height="627" onclick="openModal(this)">
                           </div>
                           <div class="carousel-slide">
-                              <img src="img/mesa-dulce/IMG-20250707-WA0012.jpg" alt="Mesa dulce temática" onclick="openModal(this)">
+                              <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250707-WA0012.jpg" alt="Torta casera cortada en porciones con azúcar impalpable sobre plato verde" width="868" height="587" onclick="openModal(this)">
                           </div>
                           <div class="carousel-slide">
-                              <img src="img/mesa-dulce/IMG-20250707-WA0013.jpg" alt="Mesa dulce colorida" onclick="openModal(this)">
+                              <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250707-WA0013.jpg" alt="Torta casera redonda espolvoreada con azúcar impalpable" width="665" height="438" onclick="openModal(this)">
                           </div>
                           <div class="carousel-slide">
-                              <img src="img/mesa-dulce/IMG-20250707-WA0015.jpg" alt="Mesa dulce artesanal" onclick="openModal(this)">
+                              <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250707-WA0015.jpg" alt="Torta casera con azúcar impalpable sobre un plato verde" width="1115" height="570" onclick="openModal(this)">
                           </div>
                           <div class="carousel-slide">
-                              <img src="img/mesa-dulce/IMG-20250707-WA0019.jpg" alt="Mesa dulce personalizada" onclick="openModal(this)">
+                              <img loading="lazy" decoding="async" src="img/mesa-dulce/IMG-20250707-WA0019.jpg" alt="Cañoncitos de hojaldre con azúcar impalpable y dulce de leche" width="1000" height="750" onclick="openModal(this)">
                           </div>
                         </div>
                     </div>
                 </div>
+                <div id="tematicas" class="gallery-section">
+                    <h2 class="gallery-title">Si buscas algo simple...</h2>
+                    <div class="carousel-container carousel-container--tematicas">
+                        <div class="carousel-track carousel-track--tematicas" id="carouselTematicas">
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-decorado-simple-2.webp" alt="Torta de dos pisos rosa y blanca con acolchado, perlas y moños dorados" width="800" height="1067" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-decorado-simple.webp" alt="Torta de dos pisos blanca con acolchado de perlas y hoja de oblea" width="800" height="1067" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-de-boca.webp" alt="Torta temática de Boca Juniors con escudo, estrellas y vela de chispas" width="800" height="600" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-messi-argentina.webp" alt="Torta temática de la Selección Argentina con Messi, escudo de la AFA y pelota" width="800" height="1067" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-minecraft.webp" alt="Torta temática de Minecraft con bloques de TNT y césped de crema" width="800" height="877" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-simple.webp" alt="Torta de chocolate con corazones rosas, perlas y cartel de Feliz Cumpleaños" width="800" height="1067" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-collage.webp" alt="Cake pops, galletitas y cupcakes decorados en celeste, junto a tortas de cumpleaños" width="800" height="800" onclick="openModal(this)"></div>
+                            <div class="carousel-slide"><img loading="lazy" decoding="async" src="img/tematicas/torta-libro.webp" alt="Torta con forma de libro negro con anteojos de fondant" width="800" height="1422" onclick="openModal(this)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-section gallery-cta">
+                    <a href="https://wa.me/541144261182" class="btn btn-primary wa-link" data-wa="Hola Gisela, vi las fotos de tu galería y me gustaría una mesa dulce parecida. ¿Cómo seguimos?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Quiero una mesa así: cotizar</a>
+                </div>
                 <h2 id="productos" class="section-title">Nuestros Productos Artesanales</h2>
-                <p class="section-subtitle">Deliciosos y elegantes para cada ocasión especial</p>
+                <p class="section-subtitle">Sumalos a tu mesa dulce o pedilos para tu evento</p>
                 <div class="products-grid">
                     <div class="product-card" data-category="bocaditos">
                         <div class="product-image">
-                            <img src="img/productos/muffins.jpg" alt="Muffins Artesanales">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estos deliciosos muffins para mi evento')">Consultar</button>
-                            </div>
+                            <img src="img/productos/muffins.webp" alt="Muffins y magdalenas decorados para eventos" width="800" height="378" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Muffins y Magdalenas</h3>
-                            <p>Esponjosos y decorados para cada ocasión</p>
+                            <p>Decorados para que combinen con tu mesa dulce y se sirvan fácil.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por muffins y magdalenas por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por muffins y magdalenas para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/cake-pops.jpg" alt="Cake Pops Elegantes">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('¡Me encantan estos cake pops! ¿Los pueden personalizar para mi evento?')">Consultar</button>
-                            </div>
+                            <img src="img/productos/cake-pops.webp" alt="Cake pops personalizados con cobertura de colores" width="800" height="600" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Cake Pops</h3>
-                            <p>Pequeñas obras de arte personalizadas</p>
+                            <p>Bocados individuales con cobertura de colores, personalizados para tu evento.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por cake pops por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por cake pops para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/brownies.jpg" alt="Brownies Decorados">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estos brownies para complementar la mesa dulce')">Consultar</button>
-                            </div>
+                            <img src="img/productos/brownies.webp" alt="Brownies de chocolate decorados" width="800" height="533" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Brownies</h3>
-                            <p>Chocolatosos y decorados con amor</p>
+                            <p>Un clásico de chocolate para cualquier mesa, listo para servir y compartir.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por brownies por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por brownies para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/pastafrola.jpg" alt="Pastafrola Casera">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('¡Qué rica pastafrola! ¿La pueden incluir en la mesa dulce?')">Consultar</button>
-                            </div>
+                            <img src="img/productos/pastafrola.webp" alt="Pastafrola casera con dulce y enrejado de masa" width="480" height="479" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Pastafrola</h3>
-                            <p>Sabor casero tradicional que encanta</p>
+                            <p>El sabor casero de siempre, con dulce y enrejado de masa.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por pastafrola por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por pastafrola para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="tortas">
                         <div class="product-image">
-                            <img src="img/productos/torta.jpg" alt="Torta Temática Personalizada">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me encanta esta torta temática! ¿Pueden personalizarla para mi celebración?')">Consultar</button>
-                            </div>
+                            <img src="img/productos/torta.webp" alt="Torta temática personalizada decorada para cumpleaños" width="640" height="1107" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Torta Temática</h3>
-                            <p>Centro de atención de tu celebración</p>
+                            <p>Con el tema de tu cumpleaños, hecha a tu medida.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por mi torta temática por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por una torta temática para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="bocaditos">
                         <div class="product-image">
-                            <img src="img/productos/alfajores-y-bocaditos.jpg" alt="Alfajores y Bocaditos">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estos alfajores y bocaditos para mi evento')">Consultar</button>
-                            </div>
+                            <img src="img/productos/alfajores-y-bocaditos.webp" alt="Alfajores y bocaditos dulces para compartir en una mesa dulce" width="800" height="546" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Alfajores y Bocaditos</h3>
-                            <p>Delicias perfectas para compartir</p>
+                            <p>Para picar y compartir, fáciles de repartir entre muchos invitados.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por alfajores y bocaditos por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por alfajores y bocaditos para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="tortas">
                         <div class="product-image">
-                            <img src="img/productos/mini-torta.jpg" alt="Mini Tortas">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan estas mini tortas para mi evento')">Consultar</button>
-                            </div>
+                            <img src="img/productos/mini-torta.webp" alt="Mini torta individual de crema y cerezas" width="576" height="419" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Mini Tortas</h3>
-                            <p>Pequeñas delicias perfectas para cada invitado</p>
+                            <p>Una porción individual por invitado: cada uno con la suya, sin cortar ni repartir.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por mini tortas por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por mini tortas para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/marroc.jpg" alt="Marroc">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesa el marroc para mi mesa dulce')">Consultar</button>
-                            </div>
+                            <img src="img/productos/marroc.webp" alt="Postre marroc de chocolate" width="800" height="752" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Marroc</h3>
-                            <p>Delicioso postre de chocolate irresistible</p>
+                            <p>Postre de chocolate para los que no se resisten al chocolate.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por marroc por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por marroc para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/shots-dulces.webp" alt="Shots Dulces">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan los shots dulces (vasitos de mousse, tiramisú, lemon pie, cheesecake)')">Consultar</button>
-                            </div>
+                            <img src="img/productos/shots-dulces.webp" alt="Shots dulces: vasitos de mousse, tiramisú, lemon pie y cheesecake" width="640" height="480" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Shots Dulces</h3>
-                            <p>Vasitos de mousse, tiramisú, lemon pie, cheesecake</p>
+                            <p>Vasitos de mousse, tiramisú, lemon pie y cheesecake: variedad en porciones listas para servir.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por shots dulces por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por shots dulces para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/cheese-cake.jpg" alt="Cheese Cake">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesa el cheese cake para mi evento')">Consultar</button>
-                            </div>
+                            <img src="img/productos/cheese-cake.webp" alt="Cheesecake con cobertura de frutos rojos" width="576" height="261" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Cheese Cake</h3>
-                            <p>Cremoso y delicioso en cada porción</p>
+                            <p>Cremoso, con cobertura de frutos rojos. Un clásico para cerrar la fiesta.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por cheese cake por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por cheese cake para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="bocaditos">
                         <div class="product-image">
-                            <img src="img/productos/cookies.jpg" alt="Cookies">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan las cookies para mi mesa dulce')">Consultar</button>
-                            </div>
+                            <img src="img/productos/cookies.webp" alt="Cookies artesanales decoradas" width="800" height="835" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Cookies</h3>
-                            <p>Galletas artesanales decoradas con amor</p>
+                            <p>Galletas artesanales decoradas, ideales como detalle para cada invitado.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por cookies por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por cookies para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/trufas.jpg" alt="Trufas">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan las trufas para mi evento')">Consultar</button>
-                            </div>
+                            <img src="img/productos/trufas.webp" alt="Trufas de chocolate con coco rallado" width="576" height="262" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Trufas</h3>
-                            <p>Exquisitos bombones de chocolate</p>
+                            <p>Bombones de chocolate con coco rallado, para sumar un toque elegante a la mesa.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por trufas por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por trufas para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="postres">
                         <div class="product-image">
-                            <img src="img/productos/lemon-pie.jpg" alt="Mini Tartas">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesan las mini tartas (frutas, lemon pie, ganache)')">Consultar</button>
-                            </div>
+                            <img src="img/productos/lemon-pie.webp" alt="Mini tartas de limón con merengue" width="576" height="260" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Mini Tartas</h3>
-                            <p>Frutas, lemon pie, ganache en porciones perfectas</p>
+                            <p>Frutas, lemon pie o ganache en porciones individuales, fáciles de servir.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por mini tartas por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por mini tartas para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
 
                     <div class="product-card" data-category="tortas">
                         <div class="product-image">
-                            <img src="img/productos/carrot-cake.jpg" alt="Carrot Cake">
-                            <div class="product-overlay">
-                                <button class="btn-whatsapp whatsapp-btn" onclick="openWhatsApp('Me interesa el carrot cake para mi evento')">Consultar</button>
-                            </div>
+                            <img src="img/productos/carrot-cake.webp" alt="Carrot cake de zanahoria con frosting de queso crema" width="800" height="569" loading="lazy" decoding="async">
                         </div>
                         <div class="product-info">
                             <h3>Carrot Cake</h3>
-                            <p>Torta de zanahoria húmeda con frosting de queso crema</p>
+                            <p>Torta de zanahoria húmeda con frosting de queso crema, para quienes buscan algo distinto al chocolate.</p>
                         </div>
+                        <a href="https://wa.me/541144261182" class="product-cta wa-link" aria-label="Consultar por carrot cake por WhatsApp" data-wa="Hola Gisela, vi tu web y quiero consultar por carrot cake para mi evento. ¿Qué opciones y precios tienen?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Consultar</a>
                     </div>
+
                 </div>
 
                 <div class="cta-section">
-                    <h3>¿Necesitas una mesa dulce completa?</h3>
-                    <p>Combinamos todos nuestros productos para crear la mesa dulce perfecta para tu evento especial</p>
-                    <a href="#" class="btn btn-primary whatsapp-btn" onclick="openWhatsApp('Hola! Me gustaría armar una mesa dulce con varios de sus productos (muffins, cake pops, brownies, etc.) para mi evento')">
-                        <i class="fab fa-whatsapp"></i>
-                        Armar Mesa Dulce Completa
-                    </a>
+                    <h3>¿Querés una mesa dulce completa?</h3>
+                    <p>Elegí los productos que más te gusten y los combinamos en una mesa con el diseño de tu evento.</p>
+                    <a href="https://wa.me/541144261182" class="btn btn-primary wa-link" data-wa="Hola Gisela, vi tu web y quiero armar una mesa dulce completa con varios de tus productos. ¿Me ayudás a elegir?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Armar mi mesa dulce completa</a>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Cómo pedir -->
+        <section id="como-pedir" class="how">
+            <div class="container">
+                <h2 class="section-title">Cómo pedir en 3 pasos</h2>
+                <p class="section-subtitle">Sin formularios ni vueltas: todo se resuelve por WhatsApp</p>
+                <ol class="steps">
+                    <li class="step">
+                        <span class="step-number" aria-hidden="true">1</span>
+                        <h3>Escribinos</h3>
+                        <p>Mandanos un mensaje por WhatsApp para empezar. Nosotros te hacemos las preguntas.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-number" aria-hidden="true">2</span>
+                        <h3>Recibí tu propuesta</h3>
+                        <p>Te armamos una propuesta con el diseño y los productos, y te la pasamos para que la mires con calma.</p>
+                    </li>
+                    <li class="step">
+                        <span class="step-number" aria-hidden="true">3</span>
+                        <h3>Confirmamos y coordinamos</h3>
+                        <p>Si te gusta, confirmamos el pedido y acordamos cómo y cuándo recibirlo.</p>
+                    </li>
+                </ol>
+                <div class="how-cta">
+                    <a href="https://wa.me/541144261182" class="btn btn-primary btn-large wa-link" data-wa="Hola Gisela, vi tu web y quiero empezar mi pedido." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Escribinos por WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Preguntas frecuentes</h2>
+                <p class="section-subtitle">Lo que casi todos preguntan antes de pedir</p>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>¿Con cuánta anticipación tengo que pedir?</summary>
+                        <p>Cuanto antes, mejor: cada fecha depende de la disponibilidad. Escribinos y te confirmamos por WhatsApp si tenemos tu fecha libre.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Cómo reservo mi fecha?</summary>
+                        <p>Cuando aceptás la propuesta, te contamos por WhatsApp los pasos para confirmar la reserva y los medios de pago disponibles.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Hacen entregas o tengo que retirar?</summary>
+                        <p>Escribinos por WhatsApp y te confirmamos si llegamos y cómo coordinar la entrega o el retiro.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Puedo personalizar la mesa dulce o la torta?</summary>
+                        <p>Sí. Escribinos por WhatsApp y armamos la propuesta a tu medida: temática, colores y productos.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Hacen tortas de boda?</summary>
+                        <p>No hacemos tortas de boda. Lo que sí hacemos es la mesa dulce para tu boda, que podés combinar con la torta que elijas.</p>
+                    </details>
+                    <details class="faq-item">
+                        <summary>¿Cuánto tengo que pedir para mis invitados?</summary>
+                        <p>Escribinos por WhatsApp y te sugerimos qué productos y cantidades te convienen según tu evento.</p>
+                    </details>
+                </div>
+                <p class="faq-more">¿Tu duda no está acá? <a href="https://wa.me/541144261182" class="link-secondary wa-link" data-wa="Hola Gisela, vi tu web y tengo una consulta." target="_blank" rel="noopener">Escribinos y te respondemos por WhatsApp</a></p>
+            </div>
+        </section>
+
+        <!-- CTA final / Contacto -->
         <section id="contacto" class="contact">
             <div class="container">
                 <div class="contact-content">
                     <div class="contact-info">
-                        <h2>¡Hablemos de tu evento especial!</h2>
-                        <p>Somos especialistas en crear mesas dulces únicas para cualquier celebración. Cuéntanos sobre tu evento y crearemos algo memorable que todos recordarán.</p>
-                        
+                        <h2>Escribinos y armamos tu mesa dulce</h2>
+                        <p>El primer paso es un mensaje por WhatsApp. Nosotros te hacemos las preguntas y te armamos una propuesta a tu medida.</p>
+
                         <div class="contact-features">
                             <div class="feature">
-                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star" aria-hidden="true"></i>
                                 <div>
-                                    <h4>Calidad Garantizada</h4>
-                                    <p>Productos artesanales de la más alta calidad</p>
+                                    <h4>Productos artesanales</h4>
+                                    <p>Hechos de forma artesanal para tu fecha</p>
                                 </div>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-palette"></i>
+                                <i class="fas fa-palette" aria-hidden="true"></i>
                                 <div>
                                     <h4>Diseños Personalizados</h4>
-                                    <p>Adaptamos cada mesa dulce a tu estilo y evento</p>
+                                    <p>Tus colores, tu temática y tu estilo en cada mesa</p>
                                 </div>
                             </div>
                             <div class="feature">
-                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-heart" aria-hidden="true"></i>
                                 <div>
                                     <h4>Hecho con Amor</h4>
-                                    <p>Cada detalle pensado para tu celebración</p>
+                                    <p>Cada detalle pensado para que tu fiesta salga como la imaginaste</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="contact-actions">
                         <div class="contact-card">
-                            <h3>¡Planifiquemos tu Evento Perfecto!</h3>
-                            <p>Cuéntanos el tipo de evento, fecha y tus preferencias para crear algo especial</p>
-                            <a href="#" class="btn btn-primary btn-large whatsapp-btn" onclick="openWhatsApp('¡Hola! Quiero planificar mi evento. Es para: ___. La fecha es: ___. Me gustaría: ___.')">
-                                <i class="fab fa-whatsapp"></i>
-                                Planificar Evento Especial
-                            </a>
+                            <h3>Empecemos</h3>
+                            <p>Mandanos un mensaje y nosotros te hacemos las preguntas para armar la propuesta.</p>
+                            <a href="https://wa.me/541144261182" class="btn btn-primary btn-large wa-link" data-wa="Hola Gisela, vi tu web y quiero cotizar mi evento. ¿Tenés disponibilidad?" target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Quiero cotizar mi evento</a>
                         </div>
                     </div>
                 </div>
@@ -414,9 +492,11 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="logo">
-                        <h3>Dulces Sueños</h3>
-                        <p>Creando momentos especiales para cada celebración</p>
+                        <img class="logo-mark logo-mark--footer" src="img/logo-gisela-pastelera-256.webp" alt="Logo de Gisela Pastelera" width="256" height="256" loading="lazy" decoding="async">
+                        <h3>Gisela Pastelera</h3>
+                        <p>Mesas dulces y tortas temáticas artesanales para tus celebraciones</p>
                     </div>
+                    <!-- PENDIENTE (dueño): zona de cobertura, horarios y redes sociales -->
                 </div>
                 <div class="footer-section">
                     <h4>Nuestros Productos</h4>
@@ -430,36 +510,127 @@
                 </div>
                 <div class="footer-section">
                     <h4>Contacto</h4>
-                    <p>¡Planifiquemos tu evento perfecto!</p>
-                    <a href="#" class="footer-whatsapp whatsapp-btn" onclick="openWhatsApp('Hola! Me gustaría conocer más sobre sus mesas dulces y servicios')">
-                        <i class="fab fa-whatsapp"></i>
-                        Enviar Mensaje
-                    </a>
+                    <p>Escribinos y te armamos una propuesta.</p>
+                    <a href="https://wa.me/541144261182" class="footer-whatsapp wa-link" data-wa="Hola Gisela, vi tu web y quiero saber más sobre tus mesas dulces y tortas temáticas." target="_blank" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i> Escribinos por WhatsApp</a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Dulces Sueños. Todos los derechos reservados.</p>
+                <p>&copy; 2024 Gisela Pastelera. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
-        <a href="#" class="whatsapp-btn" onclick="openWhatsApp('¡Hola! Me interesa una mesa dulce para mi evento')" title="Contactar por WhatsApp">
-            <i class="fab fa-whatsapp"></i>
-            <span class="tooltip">¡Consulta tu evento!</span>
-        </a>
+        <a href="https://wa.me/541144261182" class="wa-link" data-wa="Hola Gisela, vi tu web y quiero cotizar un pedido para mi evento." target="_blank" rel="noopener" aria-label="Cotizá tu pedido por WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i> <span>Cotizá por WhatsApp</span></a>
     </div>
 
     <!-- Modal para ampliar imágenes -->
     <div id="imageModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modalImage" src="" alt="">
+            <img id="modalImage" src="" alt="Imagen ampliada de la galería">
             <div class="modal-caption" id="modalCaption"></div>
         </div>
     </div>
 
+    <!-- JSON-LD: Bakery sin address/openingHours/geo/sameAs/areaServed (datos no confirmados por el dueño; agregarlos cuando se tengan). Las respuestas del FAQPage deben coincidir con el FAQ visible (#faq): si se edita uno, editar el otro. -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "@id": "https://DOMINIO-A-DEFINIR.com.ar/#negocio",
+  "name": "Gisela Pastelera",
+  "description": "Mesas dulces para bodas, cumpleaños, eventos corporativos y baby showers, y tortas temáticas personalizadas para cumpleaños.",
+  "url": "https://DOMINIO-A-DEFINIR.com.ar/",
+  "telephone": "+54 11 4426-1182",
+  "image": "https://DOMINIO-A-DEFINIR.com.ar/img/og-gisela-pastelera.jpg",
+  "knowsAbout": [
+    "Mesas dulces",
+    "Tortas temáticas",
+    "Eventos completos"
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Mesas Dulces Elegantes"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Tortas Temáticas"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Eventos Completos"
+      }
+    }
+  ]
+}
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Con cuánta anticipación tengo que pedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cuanto antes, mejor: cada fecha depende de la disponibilidad. Escribinos y te confirmamos por WhatsApp si tenemos tu fecha libre."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo reservo mi fecha?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cuando aceptás la propuesta, te contamos por WhatsApp los pasos para confirmar la reserva y los medios de pago disponibles."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen entregas o tengo que retirar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Escribinos por WhatsApp y te confirmamos si llegamos y cómo coordinar la entrega o el retiro."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Puedo personalizar la mesa dulce o la torta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Escribinos por WhatsApp y armamos la propuesta a tu medida: temática, colores y productos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen tortas de boda?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No hacemos tortas de boda. Lo que sí hacemos es la mesa dulce para tu boda, que podés combinar con la torta que elijas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto tengo que pedir para mis invitados?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Escribinos por WhatsApp y te sugerimos qué productos y cantidades te convienen según tu evento."
+      }
+    }
+  ]
+}
+    </script>
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
